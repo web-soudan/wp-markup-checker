@@ -11,5 +11,8 @@
     "crawl": "node scripts/crawl.mjs",
     "release": "bash scripts/publish.sh",
     "diff": "git diff --no-index --"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.1"
   }
 }

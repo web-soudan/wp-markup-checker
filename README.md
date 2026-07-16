@@ -8,7 +8,12 @@ WordPress Playground(`@wp-playground/cli`)でテストデータ入りの WordPre
 
 ## 必要環境
 
-- Node.js >= 20.18(Docker 不要・依存パッケージなし)
+- Node.js >= 20.18(Docker 不要)
+
+```bash
+npm install
+npx playwright install chromium   # 再保存処理で使用
+```
 
 ## 使い方
 
@@ -22,6 +27,8 @@ npm run crawl
 # crawl-output ブランチへコミット + wp-<version> タグ付与(直近クロール分)
 npm run release
 ```
+
+クロール前に、全投稿・固定ページを起動中バージョンのエディタ相当で「無変更保存」します(保存時のブロック変換を反映させるため。詳細は [SPEC.md](SPEC.md))。この処理を省く場合は `npm run crawl -- --skip-resave` を使います。
 
 - `--wp=latest` 指定時もフォルダ名・タグ名は generator メタから取得した実バージョン(例 `6.8.5`)になります
 - ポートが競合する場合は `--port=<port>` を指定してください(保存される HTML 内の URL はポートに依らず正規化されます)

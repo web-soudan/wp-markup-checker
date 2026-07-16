@@ -3,7 +3,7 @@
  * WordPress Playground を起動し、サイトマップ上の全ページをクロールして
  * 正規化した HTML を output/<WPバージョン>/ に保存する。
  *
- * Usage: node scripts/crawl.mjs [--wp=<version|latest>] [--port=<port>]
+ * Usage: node scripts/crawl.mjs [--wp=<version|latest>] [--port=<port>] [--skip-resave]
  */
 import { spawn } from 'node:child_process';
 import { mkdir, rename, rm, writeFile } from 'node:fs/promises';
@@ -29,6 +29,7 @@ const { values: args } = parseArgs({
   options: {
     wp: { type: 'string', default: 'latest' },
     port: { type: 'string', default: '9400' },
+    'skip-resave': { type: 'boolean', default: false },
   },
 });
 
@@ -53,6 +54,19 @@ async function main() {
     const home = await waitForReady(base, server);
 
     const version = detectWpVersion(home, args.wp);
+
+    if (!args['skip-resave']) {
+      // インポート直後は旧マークアップのままなので、起動中バージョンの
+      // エディタ JS で全投稿を「無変更保存」し、保存時のブロック変換を反映させる
+      console.log('全投稿・固定ページをエディタ相当で再保存中...');
+      const { resaveAllPosts } = await import('./resave.mjs');
+      const resave = await resaveAllPosts(base);
+      console.log(`再保存: ${resave.checked} 件中 ${resave.resaved} 件でマークアップ変換あり`);
+      for (const slug of resave.converted) {
+        console.log(`  converted: ${slug}`);
+      }
+    }
+
     const outDir = path.join(rootDir, 'output', version);
     const urls = await collectUrls(base);
     console.log(`WordPress ${version} / ${urls.length} URL -> ${path.relative(rootDir, outDir)}/`);

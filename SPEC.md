@@ -11,7 +11,7 @@ WordPress コアのバージョンアップによって、フロントエンド�
 ## 実行環境
 
 - WordPress Playground(`@wp-playground/cli`)で実行する。**wp-env / Docker は使わない**
-- Node.js >= 20.18(依存パッケージなし。Playground CLI は `npx` で実行)
+- Node.js >= 20.18 + Playwright(Chromium。再保存処理で使用。Playground CLI は `npx` で実行)
 - ローカルと GitHub Actions の両方で動作する
 - Playground は `--workers=1` で起動する(マルチワーカーによる非決定的な挙動を避ける)
 - blueprint の `wp-cli` ステップは使わない(この環境で SQLite のファイルロックがハングするため、`runPHP` で代替)
@@ -24,6 +24,7 @@ WordPress コアのバージョンアップによって、フロントエンド�
 | テーマ | Twenty Twenty-Five を**バージョン固定**(zip URL 指定)で有効化。全 WP バージョンで同一テーマにし、コア由来の差分だけを見る |
 | テストデータ | [theme-test-data](https://github.com/WordPress/theme-test-data) の `64-block-test-data.xml` を `fixtures/` にベンダリング(上流変更による結果ブレ防止) |
 | 初期コンテンツ | WP が自動生成する post ID 1「Hello world!」は評価対象外のため、**インポート前に削除**(blueprint の `runPHP` ステップ) |
+| 再保存 | インポートだけでは「エディタで開いて保存した時のブロック変換(deprecation の migrate / 再シリアライズ)」が反映されないため、クロール前に**全投稿・固定ページをエディタ相当で無変更保存**する。Playwright で管理画面のエディタを1回読み込み、そのページ上で `wp.blocks.parse()` → `wp.blocks.serialize()` を各投稿に適用し、変換があったものだけ REST API で保存(起動中バージョン同梱のエディタ JS を使用)。`--skip-resave` で省略可 |
 | パーマリンク | WP 新規インストールのデフォルト(day and name: `/%year%/%monthnum%/%day%/%postname%/`)をそのまま使用 |
 | サイト名 | blueprint の最終ステップで `wp-markup-checker` に設定。Playground は blueprint 完了前にリクエストを受け始めるため、クローラーはこの値を**完了検知のセンチネル**として待機する |
 | クロール範囲 | `wp-sitemap.xml` に載る全 URL(投稿・固定ページ・アーカイブ)+ トップページ |
