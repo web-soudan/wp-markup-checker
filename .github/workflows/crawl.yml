@@ -4,12 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       wp:
-        description: "WordPress version (e.g. 6.8 / latest)"
+        description: "WordPress version (e.g. 6.8 / latest / auto = 未クロールの最新版のみ実行)"
         default: "latest"
         required: false
   schedule:
-    # 週1回(月曜 12:00 JST)。新しい WP リリースを自動で拾う
-    - cron: "0 3 * * 1"
+    # 6時間ごと。stable-check API の最新版が未クロールの場合のみ実行される
+    - cron: "0 */6 * * *"
 
 permissions:
   contents: write
@@ -28,26 +28,57 @@ jobs:
           # publish.sh が crawl-output ブランチと wp-* タグを参照する
           fetch-depth: 0
 
+      - name: Check for new WordPress version
+        id: check
+        env:
+          WP_INPUT: ${{ github.event.inputs.wp || 'auto' }}
+        run: |
+          if [ "$WP_INPUT" = "auto" ]; then
+            latest=$(curl -fsSL https://api.wordpress.org/core/stable-check/1.0/ \
+              | jq -r 'to_entries[] | select(.value=="latest") | .key')
+            if [ -z "$latest" ]; then
+              echo "stable-check API から最新バージョンを取得できませんでした" >&2
+              exit 1
+            fi
+            if git ls-remote --exit-code origin "refs/tags/wp-$latest" > /dev/null; then
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              echo "最新の WordPress ${latest} はクロール済み(タグ wp-${latest})のためスキップしました" >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+            echo "新バージョン検出: WordPress ${latest}"
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "version=${latest}" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "version=${WP_INPUT}" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/setup-node@v4
+        if: steps.check.outputs.skip != 'true'
         with:
           node-version: 22
           cache: npm
 
       - name: Install dependencies
+        if: steps.check.outputs.skip != 'true'
         run: npm ci
 
       - name: Install Playwright Chromium
+        if: steps.check.outputs.skip != 'true'
         run: npx playwright install --with-deps chromium
 
       - name: Crawl
+        if: steps.check.outputs.skip != 'true'
         env:
-          WP_VERSION: ${{ github.event.inputs.wp || 'latest' }}
+          WP_VERSION: ${{ steps.check.outputs.version }}
         run: npm run crawl -- --wp="$WP_VERSION"
 
       - name: Publish to crawl-output branch
+        if: steps.check.outputs.skip != 'true'
         run: bash scripts/publish.sh --push
 
       - name: Diff summary
+        if: steps.check.outputs.skip != 'true'
         run: |
           cur="wp-$(cat output/.last-version)"
           prev=$(git tag -l 'wp-*' --sort=version:refname | grep -B 1 -x "$cur" | head -n 1)

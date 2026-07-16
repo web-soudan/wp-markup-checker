@@ -65,10 +65,11 @@ GitHub 上では `https://github.com/web-soudan/wp-markup-checker/compare/wp-6.7
 
 ## GitHub Actions
 
-- `workflow_dispatch`(WP バージョン入力、デフォルト `latest`)+ `schedule`(週1回)
+- `workflow_dispatch`(WP バージョン入力: `6.8` / `latest` / `auto`)+ `schedule`(**6時間ごと**)
+- 定期実行(および `auto` 指定時)は [stable-check API](https://api.wordpress.org/core/stable-check/1.0/) で最新安定版を取得し、**`wp-<version>` タグが未作成の場合のみ**クロールを実行(クロール済みなら数十秒でスキップ)
 - クロール後、`publish.sh --push` で `crawl-output` ブランチと `wp-<version>` タグを push
 - 直前バージョンのタグとの `diff --stat` と compare URL をジョブサマリーに出力
-- 新しい WP がリリースされると、定期実行で新しいタグが自動的に追加される
+- 新しい WP がリリースされると、最大6時間以内に新しいタグが自動的に追加される
 
 ## ディレクトリ構成
 

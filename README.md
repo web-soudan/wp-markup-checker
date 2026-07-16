@@ -46,8 +46,8 @@ npm run release
 
 [.github/workflows/crawl.yml](.github/workflows/crawl.yml)
 
-- **workflow_dispatch**: WP バージョンを指定して手動実行(デフォルト `latest`)
-- **schedule**: 週1回自動実行。新しい WP がリリースされると `crawl-output` ブランチに新しい `wp-<version>` タグが自動で追加される
+- **workflow_dispatch**: WP バージョンを指定して手動実行(`6.8` / `latest` / `auto`)
+- **schedule**: 6時間ごとに自動実行。[stable-check API](https://api.wordpress.org/core/stable-check/1.0/) の最新安定版が未クロールの場合のみ実行するため、新しい WP がリリースされると最大6時間以内に `wp-<version>` タグが自動で追加される(クロール済みならスキップ)
 - クロール後、直前バージョンのタグとの `diff --stat` と compare URL をジョブサマリーに出力
 
 ## 構成メモ
