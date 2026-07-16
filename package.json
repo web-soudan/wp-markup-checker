@@ -1,0 +1,15 @@
+{
+  "name": "wp-markup-checker",
+  "version": "1.0.0",
+  "description": "Crawl WordPress Playground pages and save normalized HTML per WordPress core version to detect markup regressions.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20.18"
+  },
+  "scripts": {
+    "crawl": "node scripts/crawl.mjs",
+    "release": "bash scripts/publish.sh",
+    "diff": "git diff --no-index --"
+  }
+}

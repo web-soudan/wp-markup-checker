@@ -1,0 +1,57 @@
+name: Crawl
+
+on:
+  workflow_dispatch:
+    inputs:
+      wp:
+        description: "WordPress version (e.g. 6.8 / latest)"
+        default: "latest"
+        required: false
+  schedule:
+    # 週1回(月曜 12:00 JST)。新しい WP リリースを自動で拾う
+    - cron: "0 3 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: crawl
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # publish.sh が crawl-output ブランチと wp-* タグを参照する
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Crawl
+        env:
+          WP_VERSION: ${{ github.event.inputs.wp || 'latest' }}
+        run: npm run crawl -- --wp="$WP_VERSION"
+
+      - name: Publish to crawl-output branch
+        run: bash scripts/publish.sh --push
+
+      - name: Diff summary
+        run: |
+          cur="wp-$(cat output/.last-version)"
+          prev=$(git tag -l 'wp-*' --sort=version:refname | grep -B 1 -x "$cur" | head -n 1)
+          if [ -n "$prev" ] && [ "$prev" != "$cur" ]; then
+            {
+              echo "## Diff: ${prev} → ${cur}"
+              echo "compare: \`${{ github.server_url }}/${{ github.repository }}/compare/${prev}...${cur}\`"
+              echo '```'
+              git diff --stat "$prev" "$cur"
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "比較対象の旧バージョンタグがありません (${cur})" >> "$GITHUB_STEP_SUMMARY"
+          fi
