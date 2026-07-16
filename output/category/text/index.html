@@ -1,0 +1,2344 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<title>Text &#8211; wp-markup-checker</title>
+<link rel='dns-prefetch' href='//127.0.0.1' />
+<link rel="alternate" type="application/rss+xml" title="wp-markup-checker &raquo; Feed" href="http://127.0.0.1:9400/feed/" />
+<link rel="alternate" type="application/rss+xml" title="wp-markup-checker &raquo; Comments Feed" href="http://127.0.0.1:9400/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="wp-markup-checker &raquo; Text Category Feed" href="http://127.0.0.1:9400/category/text/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/127.0.0.1:9400\/wp-includes\/js\/wp-emoji-release.min.js?ver="}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id='wp-block-site-title-inline-css'>
+.wp-block-site-title{box-sizing:border-box}.wp-block-site-title :where(a){color:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
+</style>
+<style id='wp-block-page-list-inline-css'>
+.wp-block-navigation .wp-block-page-list{align-items:var(--navigation-layout-align,initial);background-color:inherit;display:flex;flex-direction:var(--navigation-layout-direction,initial);flex-wrap:var(--navigation-layout-wrap,wrap);justify-content:var(--navigation-layout-justify,initial)}.wp-block-navigation .wp-block-navigation-item{background-color:inherit}
+</style>
+<link rel='stylesheet' id='wp-block-navigation-css' href='http://127.0.0.1:9400/wp-includes/blocks/navigation/style.min.css?ver=' media='all' />
+<style id='wp-block-group-inline-css'>
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+</style>
+<style id='wp-block-query-title-inline-css'>
+.wp-block-query-title{box-sizing:border-box}
+</style>
+<style id='wp-block-term-description-inline-css'>
+:where(.wp-block-term-description){box-sizing:border-box;margin-bottom:var(--wp--style--block-gap);margin-top:var(--wp--style--block-gap)}.wp-block-term-description p{margin-bottom:0;margin-top:0}
+</style>
+<style id='wp-block-post-featured-image-inline-css'>
+.wp-block-post-featured-image{margin-left:0;margin-right:0}.wp-block-post-featured-image a{display:block;height:100%}.wp-block-post-featured-image :where(img){box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom;width:100%}.wp-block-post-featured-image.alignfull img,.wp-block-post-featured-image.alignwide img{width:100%}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim{background-color:#000;inset:0;position:absolute}.wp-block-post-featured-image{position:relative}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-gradient{background-color:initial}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-0{opacity:0}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-10{opacity:.1}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-20{opacity:.2}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-30{opacity:.3}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-40{opacity:.4}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-50{opacity:.5}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-60{opacity:.6}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-70{opacity:.7}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-80{opacity:.8}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-90{opacity:.9}.wp-block-post-featured-image .wp-block-post-featured-image__overlay.has-background-dim-100{opacity:1}.wp-block-post-featured-image:where(.alignleft,.alignright){width:100%}
+</style>
+<style id='wp-block-post-title-inline-css'>
+.wp-block-post-title{box-sizing:border-box;word-break:break-word}.wp-block-post-title :where(a){display:inline-block;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
+</style>
+<style id='wp-block-post-content-inline-css'>
+.wp-block-post-content{display:flow-root}
+</style>
+<style id='wp-block-post-date-inline-css'>
+.wp-block-post-date{box-sizing:border-box}
+</style>
+<style id='wp-block-paragraph-inline-css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+</style>
+<style id='wp-block-footnotes-inline-css'>
+.editor-styles-wrapper,.entry-content{counter-reset:footnotes}a[data-fn].fn{counter-increment:footnotes;display:inline-flex;font-size:smaller;text-decoration:none;text-indent:-9999999px;vertical-align:super}a[data-fn].fn:after{content:"[" counter(footnotes) "]";float:left;text-indent:0}
+</style>
+<style id='wp-block-verse-inline-css'>
+pre.wp-block-verse{overflow:auto;white-space:pre-wrap}:where(pre.wp-block-verse){font-family:inherit}
+</style>
+<style id='wp-block-heading-inline-css'>
+h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+</style>
+<style id='wp-block-table-inline-css'>
+.wp-block-table{overflow-x:auto}.wp-block-table table{border-collapse:collapse;width:100%}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{border:1px solid;padding:.5em}.wp-block-table .has-fixed-layout{table-layout:fixed;width:100%}.wp-block-table .has-fixed-layout td,.wp-block-table .has-fixed-layout th{word-break:break-word}.wp-block-table.aligncenter,.wp-block-table.alignleft,.wp-block-table.alignright{display:table;width:auto}.wp-block-table.aligncenter td,.wp-block-table.aligncenter th,.wp-block-table.alignleft td,.wp-block-table.alignleft th,.wp-block-table.alignright td,.wp-block-table.alignright th{word-break:break-word}.wp-block-table .has-subtle-light-gray-background-color{background-color:#f3f4f5}.wp-block-table .has-subtle-pale-green-background-color{background-color:#e9fbe5}.wp-block-table .has-subtle-pale-blue-background-color{background-color:#e7f5fe}.wp-block-table .has-subtle-pale-pink-background-color{background-color:#fcf0ef}.wp-block-table.is-style-stripes{background-color:initial;border-bottom:1px solid #f0f0f0;border-collapse:inherit;border-spacing:0}.wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:#f0f0f0}.wp-block-table.is-style-stripes.has-subtle-light-gray-background-color tbody tr:nth-child(odd){background-color:#f3f4f5}.wp-block-table.is-style-stripes.has-subtle-pale-green-background-color tbody tr:nth-child(odd){background-color:#e9fbe5}.wp-block-table.is-style-stripes.has-subtle-pale-blue-background-color tbody tr:nth-child(odd){background-color:#e7f5fe}.wp-block-table.is-style-stripes.has-subtle-pale-pink-background-color tbody tr:nth-child(odd){background-color:#fcf0ef}.wp-block-table.is-style-stripes td,.wp-block-table.is-style-stripes th{border-color:#0000}.wp-block-table .has-border-color td,.wp-block-table .has-border-color th,.wp-block-table .has-border-color tr,.wp-block-table .has-border-color>*{border-color:inherit}.wp-block-table table[style*=border-top-color] tr:first-child,.wp-block-table table[style*=border-top-color] tr:first-child td,.wp-block-table table[style*=border-top-color] tr:first-child th,.wp-block-table table[style*=border-top-color]>*,.wp-block-table table[style*=border-top-color]>* td,.wp-block-table table[style*=border-top-color]>* th{border-top-color:inherit}.wp-block-table table[style*=border-top-color] tr:not(:first-child){border-top-color:initial}.wp-block-table table[style*=border-right-color] td:last-child,.wp-block-table table[style*=border-right-color] th,.wp-block-table table[style*=border-right-color] tr,.wp-block-table table[style*=border-right-color]>*{border-right-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:last-child,.wp-block-table table[style*=border-bottom-color] tr:last-child td,.wp-block-table table[style*=border-bottom-color] tr:last-child th,.wp-block-table table[style*=border-bottom-color]>*,.wp-block-table table[style*=border-bottom-color]>* td,.wp-block-table table[style*=border-bottom-color]>* th{border-bottom-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:not(:last-child){border-bottom-color:initial}.wp-block-table table[style*=border-left-color] td:first-child,.wp-block-table table[style*=border-left-color] th,.wp-block-table table[style*=border-left-color] tr,.wp-block-table table[style*=border-left-color]>*{border-left-color:inherit}.wp-block-table table[style*=border-style] td,.wp-block-table table[style*=border-style] th,.wp-block-table table[style*=border-style] tr,.wp-block-table table[style*=border-style]>*{border-style:inherit}.wp-block-table table[style*=border-width] td,.wp-block-table table[style*=border-width] th,.wp-block-table table[style*=border-width] tr,.wp-block-table table[style*=border-width]>*{border-style:inherit;border-width:inherit}
+</style>
+<style id='wp-block-spacer-inline-css'>
+.wp-block-spacer{clear:both}
+</style>
+<style id='wp-block-pullquote-inline-css'>
+.wp-block-pullquote{box-sizing:border-box;margin:0 0 1em;overflow-wrap:break-word;padding:4em 0;text-align:center}.wp-block-pullquote blockquote,.wp-block-pullquote cite,.wp-block-pullquote p{color:inherit}.wp-block-pullquote blockquote{margin:0}.wp-block-pullquote p{margin-top:0}.wp-block-pullquote p:last-child{margin-bottom:0}.wp-block-pullquote.alignleft,.wp-block-pullquote.alignright{max-width:420px}.wp-block-pullquote cite,.wp-block-pullquote footer{position:relative}.wp-block-pullquote .has-text-color a{color:inherit}.wp-block-pullquote.has-text-align-left blockquote{text-align:left}.wp-block-pullquote.has-text-align-right blockquote{text-align:right}.wp-block-pullquote.is-style-solid-color{border:none}.wp-block-pullquote.is-style-solid-color blockquote{margin-left:auto;margin-right:auto;max-width:60%}.wp-block-pullquote.is-style-solid-color blockquote p{font-size:2em;margin-bottom:0;margin-top:0}.wp-block-pullquote.is-style-solid-color blockquote cite{font-style:normal;text-transform:none}.wp-block-pullquote cite{color:inherit}
+</style>
+<style id='wp-block-preformatted-inline-css'>
+.wp-block-preformatted{box-sizing:border-box;white-space:pre-wrap}:where(.wp-block-preformatted.has-background){padding:1.25em 2.375em}
+</style>
+<style id='wp-block-details-inline-css'>
+.wp-block-details{box-sizing:border-box}.wp-block-details summary{cursor:pointer}
+</style>
+<style id='wp-block-code-inline-css'>
+.wp-block-code{box-sizing:border-box}.wp-block-code code{display:block;font-family:inherit;overflow-wrap:break-word;white-space:pre-wrap}
+</style>
+<style id='wp-block-quote-inline-css'>
+.wp-block-quote{box-sizing:border-box;overflow-wrap:break-word}.wp-block-quote.is-large:where(:not(.is-style-plain)),.wp-block-quote.is-style-large:where(:not(.is-style-plain)){margin-bottom:1em;padding:0 1em}.wp-block-quote.is-large:where(:not(.is-style-plain)) p,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) p{font-size:1.5em;font-style:italic;line-height:1.6}.wp-block-quote.is-large:where(:not(.is-style-plain)) cite,.wp-block-quote.is-large:where(:not(.is-style-plain)) footer,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) cite,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) footer{font-size:1.125em;text-align:right}.wp-block-quote>cite{display:block}
+</style>
+<style id='wp-block-list-inline-css'>
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+
+				ul.is-style-checkmark-list {
+					list-style-type: "\2713";
+				}
+
+				ul.is-style-checkmark-list li {
+					padding-inline-start: 1ch;
+				}
+</style>
+<style id='wp-block-post-template-inline-css'>
+.wp-block-post-template{list-style:none;margin-bottom:0;margin-top:0;max-width:100%;padding:0}.wp-block-post-template.is-flex-container{display:flex;flex-direction:row;flex-wrap:wrap;gap:1.25em}.wp-block-post-template.is-flex-container>li{margin:0;width:100%}@media (min-width:600px){.wp-block-post-template.is-flex-container.is-flex-container.columns-2>li{width:calc(50% - .625em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-3>li{width:calc(33.33333% - .83333em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-4>li{width:calc(25% - .9375em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-5>li{width:calc(20% - 1em)}.wp-block-post-template.is-flex-container.is-flex-container.columns-6>li{width:calc(16.66667% - 1.04167em)}}@media (max-width:600px){.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid.wp-block-post-template-is-layout-grid{grid-template-columns:1fr}}.wp-block-post-template-is-layout-constrained>li>.alignright,.wp-block-post-template-is-layout-flow>li>.alignright{float:right;margin-inline-end:0;margin-inline-start:2em}.wp-block-post-template-is-layout-constrained>li>.alignleft,.wp-block-post-template-is-layout-flow>li>.alignleft{float:left;margin-inline-end:2em;margin-inline-start:0}.wp-block-post-template-is-layout-constrained>li>.aligncenter,.wp-block-post-template-is-layout-flow>li>.aligncenter{margin-inline-end:auto;margin-inline-start:auto}
+</style>
+<style id='wp-block-query-pagination-inline-css'>
+.wp-block-query-pagination.is-content-justification-space-between>.wp-block-query-pagination-next:last-of-type{margin-inline-start:auto}.wp-block-query-pagination.is-content-justification-space-between>.wp-block-query-pagination-previous:first-child{margin-inline-end:auto}.wp-block-query-pagination .wp-block-query-pagination-previous-arrow{display:inline-block;margin-right:1ch}.wp-block-query-pagination .wp-block-query-pagination-previous-arrow:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-query-pagination .wp-block-query-pagination-next-arrow{display:inline-block;margin-left:1ch}.wp-block-query-pagination .wp-block-query-pagination-next-arrow:not(.is-arrow-chevron){transform:scaleX(1)}.wp-block-query-pagination.aligncenter{justify-content:center}
+</style>
+<style id='wp-block-site-logo-inline-css'>
+.wp-block-site-logo{box-sizing:border-box;line-height:0}.wp-block-site-logo a{display:inline-block;line-height:0}.wp-block-site-logo.is-default-size img{height:auto;width:120px}.wp-block-site-logo img{height:auto;max-width:100%}.wp-block-site-logo a,.wp-block-site-logo img{border-radius:inherit}.wp-block-site-logo.aligncenter{margin-left:auto;margin-right:auto;text-align:center}:root :where(.wp-block-site-logo.is-style-rounded){border-radius:9999px}
+</style>
+<style id='wp-block-site-tagline-inline-css'>
+.wp-block-site-tagline{box-sizing:border-box}
+</style>
+<style id='wp-block-columns-inline-css'>
+.wp-block-columns{align-items:normal!important;box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-stretch{align-self:stretch}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
+</style>
+<style id='wp-block-navigation-link-inline-css'>
+.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{border-top:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px;--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color)}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip:auto!important;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #FFFFFF;--wp--preset--color--contrast: #111111;--wp--preset--color--accent-1: #FFEE58;--wp--preset--color--accent-2: #F6CFF4;--wp--preset--color--accent-3: #503AA8;--wp--preset--color--accent-4: #686868;--wp--preset--color--accent-5: #FBFAF3;--wp--preset--color--accent-6: color-mix(in srgb, currentColor 20%, transparent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 0.875rem;--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);--wp--preset--font-size--large: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.392), 1.375rem);--wp--preset--font-size--x-large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);--wp--preset--font-size--xx-large: clamp(2.15rem, 2.15rem + ((1vw - 0.2rem) * 1.333), 3rem);--wp--preset--font-family--manrope: Manrope, sans-serif;--wp--preset--font-family--fira-code: "Fira Code", monospace;--wp--preset--spacing--20: 10px;--wp--preset--spacing--30: 20px;--wp--preset--spacing--40: 30px;--wp--preset--spacing--50: clamp(30px, 5vw, 50px);--wp--preset--spacing--60: clamp(30px, 7vw, 70px);--wp--preset--spacing--70: clamp(50px, 7vw, 90px);--wp--preset--spacing--80: clamp(70px, 10vw, 140px);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 645px;--wp--style--global--wide-size: 1340px; }:where(body) { margin: 0; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) { padding-right: 0; padding-left: 0; }.has-global-padding :where(:not(.alignfull.is-layout-flow) > .has-global-padding:not(.wp-block-block, .alignfull)) > .alignfull { margin-left: 0; margin-right: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 1.2rem; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 1.2rem; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.2rem;}:root :where(.is-layout-grid){gap: 1.2rem;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{background-color: var(--wp--preset--color--base);color: var(--wp--preset--color--contrast);font-family: var(--wp--preset--font-family--manrope);font-size: var(--wp--preset--font-size--large);font-weight: 300;letter-spacing: -0.1px;line-height: 1.4;--wp--style--root--padding-top: 0px;--wp--style--root--padding-right: var(--wp--preset--spacing--50);--wp--style--root--padding-bottom: 0px;--wp--style--root--padding-left: var(--wp--preset--spacing--50);}a:where(:not(.wp-element-button)){color: currentColor;text-decoration: underline;}:root :where(a:where(:not(.wp-element-button)):hover){text-decoration: none;}h1, h2, h3, h4, h5, h6{font-weight: 400;letter-spacing: -0.1px;line-height: 1.125;}h1{font-size: var(--wp--preset--font-size--xx-large);}h2{font-size: var(--wp--preset--font-size--x-large);}h3{font-size: var(--wp--preset--font-size--large);}h4{font-size: var(--wp--preset--font-size--medium);}h5{font-size: var(--wp--preset--font-size--small);letter-spacing: 0.5px;}h6{font-size: var(--wp--preset--font-size--small);font-weight: 700;letter-spacing: 1.4px;text-transform: uppercase;}:root :where(.wp-element-button, .wp-block-button__link){background-color: var(--wp--preset--color--contrast);border-width: 0;color: var(--wp--preset--color--base);font-family: inherit;font-size: var(--wp--preset--font-size--medium);line-height: inherit;padding-top: 1rem;padding-right: 2.25rem;padding-bottom: 1rem;padding-left: 2.25rem;text-decoration: none;}:root :where(.wp-element-button:hover, .wp-block-button__link:hover){background-color: color-mix(in srgb, var(--wp--preset--color--contrast) 85%, transparent);border-color: transparent;color: var(--wp--preset--color--base);}:root :where(.wp-element-button:focus, .wp-block-button__link:focus){outline-color: var(--wp--preset--color--accent-4);outline-offset: 2px;}:root :where(.wp-element-caption, .wp-block-audio figcaption, .wp-block-embed figcaption, .wp-block-gallery figcaption, .wp-block-image figcaption, .wp-block-table figcaption, .wp-block-video figcaption){font-size: var(--wp--preset--font-size--small);line-height: 1.4;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-accent-1-color{color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-color{color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-color{color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-color{color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-color{color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-color{color: var(--wp--preset--color--accent-6) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-background-color{background-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-background-color{background-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-background-color{background-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-background-color{background-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-background-color{background-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-background-color{background-color: var(--wp--preset--color--accent-6) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-accent-1-border-color{border-color: var(--wp--preset--color--accent-1) !important;}.has-accent-2-border-color{border-color: var(--wp--preset--color--accent-2) !important;}.has-accent-3-border-color{border-color: var(--wp--preset--color--accent-3) !important;}.has-accent-4-border-color{border-color: var(--wp--preset--color--accent-4) !important;}.has-accent-5-border-color{border-color: var(--wp--preset--color--accent-5) !important;}.has-accent-6-border-color{border-color: var(--wp--preset--color--accent-6) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-manrope-font-family{font-family: var(--wp--preset--font-family--manrope) !important;}.has-fira-code-font-family{font-family: var(--wp--preset--font-family--fira-code) !important;}
+:root :where(.wp-block-columns-is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.wp-block-columns-is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.wp-block-columns-is-layout-flow) > *{margin-block-start: var(--wp--preset--spacing--50);margin-block-end: 0;}:root :where(.wp-block-columns-is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.wp-block-columns-is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.wp-block-columns-is-layout-constrained) > *{margin-block-start: var(--wp--preset--spacing--50);margin-block-end: 0;}:root :where(.wp-block-columns-is-layout-flex){gap: var(--wp--preset--spacing--50);}:root :where(.wp-block-columns-is-layout-grid){gap: var(--wp--preset--spacing--50);}
+:root :where(.wp-block-pullquote){font-size: var(--wp--preset--font-size--xx-large);font-weight: 300;line-height: 1.2;padding-top: var(--wp--preset--spacing--30);padding-bottom: var(--wp--preset--spacing--30);}:root :where(.wp-block-pullquote p:last-of-type){margin-bottom: var(--wp--preset--spacing--30);}
+:root :where(.wp-block-pullquote cite){font-size: var(--wp--preset--font-size--small);font-style: normal;}
+:root :where(.wp-block-code){background-color: var(--wp--preset--color--accent-5);color: var(--wp--preset--color--contrast);font-family: var(--wp--preset--font-family--fira-code);font-size: var(--wp--preset--font-size--medium);font-weight: 300;padding-top: var(--wp--preset--spacing--40);padding-right: var(--wp--preset--spacing--40);padding-bottom: var(--wp--preset--spacing--40);padding-left: var(--wp--preset--spacing--40);}
+:root :where(.wp-block-post-date){color: var(--wp--preset--color--accent-4);font-size: var(--wp--preset--font-size--small);}
+:root :where(.wp-block-post-date a:where(:not(.wp-element-button))){color: var(--wp--preset--color--accent-4);text-decoration: none;}
+:root :where(.wp-block-post-date a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-post-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-quote){border-color: currentColor;border-width: 0 0 0 2px;border-style: solid;font-size: var(--wp--preset--font-size--large);font-weight: 300;margin-right: 0;margin-left: 0;padding-top: var(--wp--preset--spacing--30);padding-right: var(--wp--preset--spacing--40);padding-bottom: var(--wp--preset--spacing--30);padding-left: var(--wp--preset--spacing--40);}:root :where(.wp-block-quote-is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.wp-block-quote-is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.wp-block-quote-is-layout-flow) > *{margin-block-start: var(--wp--preset--spacing--30);margin-block-end: 0;}:root :where(.wp-block-quote-is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.wp-block-quote-is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.wp-block-quote-is-layout-constrained) > *{margin-block-start: var(--wp--preset--spacing--30);margin-block-end: 0;}:root :where(.wp-block-quote-is-layout-flex){gap: var(--wp--preset--spacing--30);}:root :where(.wp-block-quote-is-layout-grid){gap: var(--wp--preset--spacing--30);}:root :where(.wp-block-quote.has-text-align-right ){border-width: 0 2px 0 0;}:root :where(.wp-block-quote.has-text-align-center ){border-width: 0;border-inline: 0; padding-inline: 0;}
+:root :where(.wp-block-quote cite){font-size: var(--wp--preset--font-size--small);font-style: normal;font-weight: 300;}:root :where(.wp-block-quote cite sub){font-size: 0.65em}
+:root :where(.wp-block-query-pagination){font-size: var(--wp--preset--font-size--medium);font-weight: 500;}
+:root :where(.wp-block-site-tagline){font-size: var(--wp--preset--font-size--medium);}
+:root :where(.wp-block-site-title){font-weight: 700;letter-spacing: -.5px;}
+:root :where(.wp-block-site-title a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-site-title a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-term-description){font-size: var(--wp--preset--font-size--medium);}
+:root :where(.wp-block-navigation){font-size: var(--wp--preset--font-size--medium);}
+:root :where(.wp-block-navigation a:where(:not(.wp-element-button))){text-decoration: none;}
+:root :where(.wp-block-navigation a:where(:not(.wp-element-button)):hover){text-decoration: underline;}
+:root :where(.wp-block-list li){margin-top: 0.5rem;}
+</style>
+<style id='block-style-variation-styles-inline-css'>
+:root :where(.wp-block-quote.is-style-plain--2){border-radius: 0;border-color: transparent;border-width: 0;border-style: none;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;}
+:root :where(.wp-block-quote.is-style-plain--3){border-radius: 0;border-color: transparent;border-width: 0;border-style: none;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;}
+:root :where(.wp-block-quote.is-style-plain--4){border-radius: 0;border-color: transparent;border-width: 0;border-style: none;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;}
+:root :where(.wp-block-quote.is-style-plain--5){border-radius: 0;border-color: transparent;border-width: 0;border-style: none;padding-top: 0;padding-right: 0;padding-bottom: 0;padding-left: 0;}
+</style>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='core-block-supports-inline-css'>
+.wp-container-core-navigation-is-layout-1{justify-content:flex-end;}.wp-container-core-group-is-layout-1{flex-wrap:nowrap;gap:var(--wp--preset--spacing--10);justify-content:flex-end;}.wp-container-core-group-is-layout-2{flex-wrap:nowrap;justify-content:space-between;}.wp-elements-41e77bb934a4193f982f7d48ed9138c8 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--vivid-red);}.wp-elements-5954f79d1f39c5dcaaaab772c7cfc982 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--vivid-green-cyan);}.wp-elements-d1d7e2b8583b41545e4a2261b456b01a a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-475410893b8bc4dd94547178f9699c38 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--vivid-red);}.wp-elements-39c9f3f87d43ae9fec1aa574475b3a20 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--vivid-red);}.wp-elements-acb1526e9cb26aec1e9b43aee786fb5b a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-acb1526e9cb26aec1e9b43aee786fb5b a:where(:not(.wp-element-button)):hover{color:var(--wp--preset--color--black);}.wp-elements-b895b423cb0fe3d2c1a4095fda7e936a a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-b895b423cb0fe3d2c1a4095fda7e936a a:where(:not(.wp-element-button)):hover{color:var(--wp--preset--color--black);}.wp-elements-25bbbbe987d4f8bb7ba65a453b715271 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--vivid-red);}.wp-elements-66dd8fdc6bf50d3f221e9f295a005919 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--vivid-green-cyan);}.wp-elements-20fd725416c43724166fdb9fc46c6255 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--vivid-red);}.wp-elements-93ef80a72d360b17a3d41f25b151929a a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-eb06c7883642a52dca1acfffd608d66c a:where(:not(.wp-element-button)){color:var(--wp--preset--color--pale-pink);}.wp-elements-eb06c7883642a52dca1acfffd608d66c a:where(:not(.wp-element-button)):hover{color:var(--wp--preset--color--black);}.wp-container-core-details-is-layout-12 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-details-is-layout-12 > * + *{margin-block-start:var(--wp--preset--spacing--50);margin-block-end:0;}.wp-elements-e1dccdbddc3f273a1ff511f448a1f594 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--vivid-red);}.wp-elements-d7b59c9beb186989dac5521c17c790a6 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--vivid-red);}.wp-elements-372e7ea87a2bbc51ebb76c6ad8952d30 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--vivid-red);}.wp-elements-b7e30462860e7fdd763411b0c2f47c7e a:where(:not(.wp-element-button)){color:var(--wp--preset--color--vivid-red);}.wp-elements-c515ed18b3f7295368b13e894edb6ded a:where(:not(.wp-element-button)){color:var(--wp--preset--color--vivid-red);}.wp-elements-52699ce9be97447e6e2f5a004cd4837e a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-52699ce9be97447e6e2f5a004cd4837e a:where(:not(.wp-element-button)):hover{color:var(--wp--preset--color--vivid-purple);}.wp-elements-d80a5539225588e2c2b79bba3cc044a2 h1, .wp-elements-d80a5539225588e2c2b79bba3cc044a2 h2, .wp-elements-d80a5539225588e2c2b79bba3cc044a2 h3, .wp-elements-d80a5539225588e2c2b79bba3cc044a2 h4, .wp-elements-d80a5539225588e2c2b79bba3cc044a2 h5, .wp-elements-d80a5539225588e2c2b79bba3cc044a2 h6{color:var(--wp--preset--color--vivid-cyan-blue);background-color:var(--wp--preset--color--cyan-bluish-gray);}.wp-elements-bb5ce1a468b43d739b426813ea079026 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--vivid-red);}.wp-elements-8db6cf1957926e16facbd2ff43da784f a:where(:not(.wp-element-button)){color:var(--wp--preset--color--vivid-red);}.wp-elements-1d15949f41b7dd59820fcaa33ec6a9b6 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-container-core-query-pagination-is-layout-1{justify-content:space-between;}.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;}.wp-container-core-navigation-is-layout-2{flex-direction:column;align-items:flex-start;}.wp-container-core-navigation-is-layout-3{flex-direction:column;align-items:flex-start;}.wp-container-core-group-is-layout-18{gap:var(--wp--preset--spacing--80);justify-content:space-between;align-items:flex-start;}.wp-container-core-group-is-layout-19{justify-content:space-between;align-items:flex-start;}.wp-container-core-group-is-layout-20{gap:var(--wp--preset--spacing--20);justify-content:space-between;}
+</style>
+<style id='wp-block-template-skip-link-inline-css'>
+
+		.skip-link.screen-reader-text {
+			border: 0;
+			clip: rect(1px,1px,1px,1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip: auto !important;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}
+</style>
+<style id='twentytwentyfive-style-inline-css'>
+a{text-decoration-thickness:1px!important;text-underline-offset:.1em}:where(.wp-site-blocks :focus){outline-style:solid;outline-width:2px}.wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item:not(:last-child){margin-bottom:3px}.wp-block-navigation .wp-block-navigation-item .wp-block-navigation-item__content{outline-offset:4px}.wp-block-navigation .wp-block-navigation-item ul.wp-block-navigation__submenu-container .wp-block-navigation-item__content{outline-offset:0}blockquote,caption,figcaption,h1,h2,h3,h4,h5,h6,p{text-wrap:pretty}.more-link{display:block}:where(pre){overflow-x:auto}
+</style>
+<link rel="https://api.w.org/" href="http://127.0.0.1:9400/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="http://127.0.0.1:9400/wp-json/wp/v2/categories/5" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://127.0.0.1:9400/xmlrpc.php?rsd" />
+<script type="importmap" id="wp-importmap">
+{"imports":{"@wordpress\/interactivity":"http:\/\/127.0.0.1:9400\/wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js?ver="}}
+</script>
+<script type="module" src="http://127.0.0.1:9400/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js?ver=" id="@wordpress/block-library/navigation/view-js-module"></script>
+<link rel="modulepreload" href="http://127.0.0.1:9400/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=" id="@wordpress/interactivity-js-modulepreload"><style class='wp-fonts-local'>
+@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:fallback;src:url('http://127.0.0.1:9400/wp-content/themes/twentytwentyfive/assets/fonts/manrope/Manrope-VariableFont_wght.woff2') format('woff2');}
+@font-face{font-family:"Fira Code";font-style:normal;font-weight:300 700;font-display:fallback;src:url('http://127.0.0.1:9400/wp-content/themes/twentytwentyfive/assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2') format('woff2');}
+</style>
+</head>
+
+<body class="archive category category-text category-5 wp-embed-responsive">
+
+<div class="wp-site-blocks"><header class="wp-block-template-part">
+<div class="wp-block-group alignfull is-layout-flow wp-block-group-is-layout-flow">
+	
+	<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+		
+		<div class="wp-block-group alignwide is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-2 wp-block-group-is-layout-flex" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+			<p class="wp-block-site-title"><a href="http://127.0.0.1:9400" target="_self" rel="home">wp-markup-checker</a></p>
+			
+			<div class="wp-block-group is-content-justification-right is-nowrap is-layout-flex wp-container-core-group-is-layout-1 wp-block-group-is-layout-flex">
+				<nav class="is-responsive items-justified-right wp-block-navigation is-content-justification-right is-layout-flex wp-container-core-navigation-is-layout-1 wp-block-navigation-is-layout-flex" aria-label="" 
+		 data-wp-interactive="core/navigation" data-wp-context='{"overlayOpenedBy":{"click":false,"hover":false,"focus":false},"type":"overlay","roleAttribute":"","ariaLabel":"Menu"}'><button aria-haspopup="dialog" aria-label="Open menu" class="wp-block-navigation__responsive-container-open " 
+				data-wp-on-async--click="actions.openMenuOnClick"
+				data-wp-on--keydown="actions.handleMenuKeydown"
+			><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="7.5" width="16" height="1.5" /><rect x="4" y="15" width="16" height="1.5" /></svg></button>
+				<div class="wp-block-navigation__responsive-container  has-text-color has-contrast-color has-background has-base-background-color"  id="modal-1" 
+				data-wp-class--has-modal-open="state.isMenuOpen"
+				data-wp-class--is-menu-open="state.isMenuOpen"
+				data-wp-watch="callbacks.initMenu"
+				data-wp-on--keydown="actions.handleMenuKeydown"
+				data-wp-on-async--focusout="actions.handleMenuFocusout"
+				tabindex="-1"
+			>
+					<div class="wp-block-navigation__responsive-close" tabindex="-1">
+						<div class="wp-block-navigation__responsive-dialog" 
+				data-wp-bind--aria-modal="state.ariaModal"
+				data-wp-bind--aria-label="state.ariaLabel"
+				data-wp-bind--role="state.roleAttribute"
+			>
+							<button aria-label="Close menu" class="wp-block-navigation__responsive-container-close" 
+				data-wp-on-async--click="actions.closeMenuOnClick"
+			><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="m13.06 12 6.47-6.47-1.06-1.06L12 10.94 5.53 4.47 4.47 5.53 10.94 12l-6.47 6.47 1.06 1.06L12 13.06l6.47 6.47 1.06-1.06L13.06 12Z"></path></svg></button>
+							<div class="wp-block-navigation__responsive-container-content" 
+				data-wp-watch="callbacks.focusFirstElement"
+			 id="modal-1-content">
+								<ul class="wp-block-navigation__container is-responsive items-justified-right wp-block-navigation"><ul class="wp-block-page-list"><li class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click"><a class="wp-block-pages-list__item__link wp-block-navigation-item__content" href="http://127.0.0.1:9400/how-to/">How to use the test data</a></li><li class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click"><a class="wp-block-pages-list__item__link wp-block-navigation-item__content" href="http://127.0.0.1:9400/sample-page/">Sample Page</a></li></ul></ul>
+							</div>
+						</div>
+					</div>
+				</div></nav>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+
+</header>
+
+
+<main class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:var(--wp--preset--spacing--60)">
+	<h1 class="wp-block-query-title">Category: <span>Text</span></h1>
+	 <div class="wp-block-term-description"><p>Blocks in the text category</p>
+</div>
+	
+<div class="wp-block-query alignfull is-layout-flow wp-block-query-is-layout-flow">
+	<ul class="alignfull wp-block-post-template is-layout-flow wp-block-post-template-is-layout-flow"><li class="wp-block-post post-76 post type-post status-publish format-standard hentry category-text">
+		
+		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+			
+			<h2 class="wp-block-post-title has-x-large-font-size"><a href="http://127.0.0.1:9400/2024/02/05/footnotes-2/" target="_self" >Classic</a></h2>
+			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained"><h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<p><strong><span style="color: #339966;">A paragraph inside a classic block.</span></strong></p>
+<blockquote>
+<p>A quote inside a classic block</p>
+</blockquote>
+<ul>
+<li>Bulleted list</li>
+<li>List item
+<ul>
+<li>List item</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>Numbered list</li>
+<li>List item
+<ol>
+<li>List item</li>
+</ol>
+</li>
+</ol>
+</div>
+			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2024-02-05T16:39:01+00:00"><a href="http://127.0.0.1:9400/2024/02/05/footnotes-2/">February 5, 2024</a></time></div>
+		</div>
+		
+	</li><li class="wp-block-post post-75 post type-post status-publish format-standard hentry category-text tag-border">
+		
+		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+			
+			<h2 class="wp-block-post-title has-x-large-font-size"><a href="http://127.0.0.1:9400/2024/02/05/footnotes/" target="_self" >Footnotes</a></h2>
+			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+<p>Each post can only have one footnotes block, remember to also test the block options.</p>
+
+
+
+<p>A paragraph<sup data-fn="aa484441-9ea2-470c-a0a3-218ede0c6b05" class="fn"><a href="/#aa484441-9ea2-470c-a0a3-218ede0c6b05" id="aa484441-9ea2-470c-a0a3-218ede0c6b05-link">1</a></sup></p>
+
+
+
+<p>Another paragraph<sup data-fn="f51b5ea0-388d-4673-ae03-1fc47853970f" class="fn"><a href="/#f51b5ea0-388d-4673-ae03-1fc47853970f" id="f51b5ea0-388d-4673-ae03-1fc47853970f-link">2</a></sup></p>
+
+
+<ol class="wp-block-footnotes"><li id="aa484441-9ea2-470c-a0a3-218ede0c6b05">A note <a href="#aa484441-9ea2-470c-a0a3-218ede0c6b05-link" aria-label="Jump to footnote reference 1">↩︎</a></li><li id="f51b5ea0-388d-4673-ae03-1fc47853970f">Another note <a href="#f51b5ea0-388d-4673-ae03-1fc47853970f-link" aria-label="Jump to footnote reference 2">↩︎</a></li></ol></div>
+			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2024-02-05T16:33:52+00:00"><a href="http://127.0.0.1:9400/2024/02/05/footnotes/">February 5, 2024</a></time></div>
+		</div>
+		
+	</li><li class="wp-block-post post-69 post type-post status-publish format-standard hentry category-text tag-border">
+		
+		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+			
+			<h2 class="wp-block-post-title has-x-large-font-size"><a href="http://127.0.0.1:9400/2024/02/05/verse/" target="_self" >Verse</a></h2>
+			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+<pre class="wp-block-verse">Write a verse without alignment
+Code is poetry</pre>
+
+
+
+<pre class="wp-block-verse"><strong>Write a bold verse
+Code is poetry</strong></pre>
+
+
+
+<pre class="wp-block-verse"><em>Write an italic verse
+Code is poetry</em></pre>
+
+
+
+<pre class="wp-block-verse"><a href="/">Write a linked verse
+Code is poetry</a></pre>
+
+
+
+<h2 class="wp-block-heading">Alignment</h2>
+
+
+
+<pre class="wp-block-verse has-text-align-left">Write a left aligned verse
+Code is poetry</pre>
+
+
+
+<pre class="wp-block-verse has-text-align-center">Write a centered verse
+Code is poetry</pre>
+
+
+
+<pre class="wp-block-verse has-text-align-right">Write a right aligned verse
+Code is poetry</pre>
+
+
+
+<h2 class="wp-block-heading">Color</h2>
+
+
+
+<pre class="wp-block-verse has-vivid-red-color has-text-color has-link-color wp-elements-41e77bb934a4193f982f7d48ed9138c8">Write a verse
+Code is poetry</pre>
+
+
+
+<pre class="wp-block-verse has-vivid-red-color has-text-color has-link-color wp-elements-5954f79d1f39c5dcaaaab772c7cfc982">Write a verse <a href="/">with link color</a>
+Code is poetry</pre>
+
+
+
+<pre class="wp-block-verse has-vivid-red-color has-pale-cyan-blue-background-color has-text-color has-background has-link-color wp-elements-d1d7e2b8583b41545e4a2261b456b01a">Write a verse <a href="/">with link color</a>
+Code is poetry</pre>
+
+
+
+<h2 class="wp-block-heading">Border</h2>
+
+
+
+<pre class="wp-block-verse has-border-color" style="border-color:#cf2e2e;border-width:5px;border-radius:10px">Write a verse
+Code is poetry</pre>
+
+
+
+<h2 class="wp-block-heading">Padding and margin</h2>
+
+
+
+<pre class="wp-block-verse" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">Write a verse, padding preset: 4
+Code is poetry</pre>
+
+
+
+<pre class="wp-block-verse" style="margin-top:var(--wp--preset--spacing--50);margin-right:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50);margin-left:var(--wp--preset--spacing--50)">Write a verse, margin preset: 4
+Code is poetry</pre>
+
+
+
+<h2 class="wp-block-heading">Typography</h2>
+
+
+
+<h3 class="wp-block-heading">Font size</h3>
+
+
+
+<pre class="wp-block-verse has-small-font-size">Write a verse
+Code is poetry</pre>
+
+
+
+<pre class="wp-block-verse has-medium-font-size">Write a verse
+Code is poetry</pre>
+
+
+
+<pre class="wp-block-verse has-large-font-size">Write a verse
+Code is poetry</pre>
+
+
+
+<pre class="wp-block-verse has-x-large-font-size">Write a verse
+Code is poetry</pre>
+
+
+
+<h3 class="wp-block-heading">Appearance</h3>
+
+
+
+<pre class="wp-block-verse" style="font-style:italic;font-weight:200">Write a verse
+Code is poetry</pre>
+
+
+
+<pre class="wp-block-verse" style="font-style:italic;font-weight:900">Write a verse
+Code is poetry</pre>
+
+
+
+<h3 class="wp-block-heading">Line height</h3>
+
+
+
+<pre class="wp-block-verse" style="line-height:2.4">Write a verse
+Code is poetry</pre>
+
+
+
+<h3 class="wp-block-heading">Letter spacing</h3>
+
+
+
+<pre class="wp-block-verse" style="letter-spacing:7px">Write a verse
+Code is poetry</pre>
+
+
+
+<h3 class="wp-block-heading">Decoration</h3>
+
+
+
+<pre class="wp-block-verse" style="text-decoration:underline">Write a verse
+Code is poetry</pre>
+
+
+
+<pre class="wp-block-verse" style="text-decoration:line-through">Write a verse
+Code is poetry</pre>
+
+
+
+<h3 class="wp-block-heading">Letter case</h3>
+
+
+
+<pre class="wp-block-verse" style="text-transform:uppercase">Write a verse
+Code is poetry</pre>
+
+
+
+<pre class="wp-block-verse" style="text-transform:lowercase">Write a verse
+Code is poetry</pre>
+
+
+
+<pre class="wp-block-verse" style="text-transform:capitalize">Write a verse
+Code is poetry</pre>
+</div>
+			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2024-02-05T16:24:25+00:00"><a href="http://127.0.0.1:9400/2024/02/05/verse/">February 5, 2024</a></time></div>
+		</div>
+		
+	</li><li class="wp-block-post post-57 post type-post status-publish format-standard hentry category-text tag-border">
+		
+		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+			
+			<h2 class="wp-block-post-title has-x-large-font-size"><a href="http://127.0.0.1:9400/2024/02/05/table/" target="_self" >Table</a></h2>
+			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+<figure class="wp-block-table"><table><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<h2 class="wp-block-heading">Alignment</h2>
+
+
+
+<figure class="wp-block-table alignwide"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>This table block has wide width</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure class="wp-block-table alignfull"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>This table block is full width</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure class="wp-block-table alignleft"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>This table block is left aligend</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure class="wp-block-table aligncenter"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>This table block is centered</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure class="wp-block-table alignright"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>This table block is right aligned</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p>Note: there is a spacer block above to clear the alignment.</p>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th class="has-text-align-left" data-align="left">Header label</th><th>Header label</th></tr></thead><tbody><tr><td class="has-text-align-left" data-align="left">This column has &#8220;align column left&#8221;</td><td>Cell 2</td></tr><tr><td class="has-text-align-left" data-align="left">Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td class="has-text-align-left" data-align="left">Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th class="has-text-align-center" data-align="center">Header label</th><th>Header label</th></tr></thead><tbody><tr><td class="has-text-align-center" data-align="center">This column has &#8220;align column center&#8221;</td><td>Cell 2</td></tr><tr><td class="has-text-align-center" data-align="center">Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td class="has-text-align-center" data-align="center">Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure class="wp-block-table"><table><thead><tr><th class="has-text-align-right" data-align="right">Header label</th><th>Header label</th></tr></thead><tbody><tr><td class="has-text-align-right" data-align="right">This column has &#8220;align column right&#8221;</td><td>Cell 2</td></tr><tr><td class="has-text-align-right" data-align="right">Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td class="has-text-align-right" data-align="right">Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Fixed width table cells</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<h2 class="wp-block-heading">Variation: Stripes</h2>
+
+
+
+<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Stripes style variation</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr><tr><td>Cell 5</td><td>Cell 6</td></tr><tr><td>Cell 7</td><td>Cell 8</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<h2 class="wp-block-heading">Color</h2>
+
+
+
+<figure class="wp-block-table"><table class="has-vivid-red-color has-text-color has-link-color"><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure class="wp-block-table"><table class="has-vivid-red-color has-pale-cyan-blue-background-color has-text-color has-background has-link-color"><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<h2 class="wp-block-heading">Border</h2>
+
+
+
+<figure class="wp-block-table"><table class="has-border-color has-vivid-red-border-color" style="border-width:5px"><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<h2 class="wp-block-heading">Padding and margin</h2>
+
+
+
+<figure style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)" class="wp-block-table"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure style="margin-top:var(--wp--preset--spacing--50);margin-right:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50);margin-left:var(--wp--preset--spacing--50)" class="wp-block-table"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<h2 class="wp-block-heading">Typography</h2>
+
+
+
+<h3 class="wp-block-heading">Font size</h3>
+
+
+
+<figure class="wp-block-table has-small-font-size"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure class="wp-block-table has-medium-font-size"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure class="wp-block-table has-large-font-size"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure class="wp-block-table has-x-large-font-size"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<h3 class="wp-block-heading">Appearance</h3>
+
+
+
+<figure style="font-style:italic;font-weight:200" class="wp-block-table"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure style="font-style:italic;font-weight:900" class="wp-block-table"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<h3 class="wp-block-heading">Line height</h3>
+
+
+
+<figure style="line-height:2.4" class="wp-block-table"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<h3 class="wp-block-heading">Letter spacing</h3>
+
+
+
+<figure style="letter-spacing:7px" class="wp-block-table"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<h3 class="wp-block-heading">Decoration</h3>
+
+
+
+<figure style="text-decoration:underline" class="wp-block-table"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure style="text-decoration:line-through" class="wp-block-table"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<h3 class="wp-block-heading">Letter case</h3>
+
+
+
+<figure style="text-transform:uppercase" class="wp-block-table"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure style="text-transform:lowercase" class="wp-block-table"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+
+
+
+<figure style="text-transform:capitalize" class="wp-block-table"><table><thead><tr><th>Header label</th><th>Header label</th></tr></thead><tbody><tr><td>Cell 1</td><td>Cell 2</td></tr><tr><td>Cell 3</td><td>Cell 4</td></tr></tbody><tfoot><tr><td>Footer label</td><td>Footer label</td></tr></tfoot></table><figcaption class="wp-element-caption">Caption</figcaption></figure>
+</div>
+			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2024-02-05T16:15:14+00:00"><a href="http://127.0.0.1:9400/2024/02/05/table/">February 5, 2024</a></time></div>
+		</div>
+		
+	</li><li class="wp-block-post post-47 post type-post status-publish format-standard hentry category-text tag-border">
+		
+		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+			
+			<h2 class="wp-block-post-title has-x-large-font-size"><a href="http://127.0.0.1:9400/2024/02/05/pullquote/" target="_self" >Pullquote</a></h2>
+			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+<h2 class="wp-block-heading">Alignment</h2>
+
+
+
+<figure class="wp-block-pullquote"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote has-text-align-left"><blockquote><p>Pullquote, left aligned text</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote has-text-align-center"><blockquote><p>Pullquote, centered text</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote has-text-align-right"><blockquote><p>Pullquote, right aligned text</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote alignwide"><blockquote><p>Pullquote, no text alignment, wide width</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote alignfull"><blockquote><p>Pullquote, no text alignment, full width</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote alignleft"><blockquote><p>Pullquote, no text alignment, left aligned block</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote alignleft has-text-align-left"><blockquote><p>Pullquote, left aligned text, left aligned block</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote alignleft has-text-align-right"><blockquote><p>Pullquote, right aligned text, left aligned block</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote alignright"><blockquote><p>Pullquote, no text alignment, right aligned block</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote alignright has-text-align-left"><blockquote><p>Pullquote, left aligned text, right aligned block</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote alignright has-text-align-right"><blockquote><p>Pullquote, right aligned text, right aligned block</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p>Note: there is a spacer block above to clear the alignment.</p>
+
+
+
+<h2 class="wp-block-heading">Color</h2>
+
+
+
+<figure class="wp-block-pullquote has-vivid-red-color has-text-color has-link-color wp-elements-475410893b8bc4dd94547178f9699c38"><blockquote><p>Pullquote, text color</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote has-vivid-red-color has-pale-cyan-blue-background-color has-text-color has-background has-link-color wp-elements-39c9f3f87d43ae9fec1aa574475b3a20"><blockquote><p>Pullquote, text and background color</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote has-vivid-red-color has-pale-cyan-blue-background-color has-text-color has-background has-link-color wp-elements-acb1526e9cb26aec1e9b43aee786fb5b"><blockquote><p>Pullquote, text, link and background color. <a href="/">Example link.</a></p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote has-vivid-red-color has-very-light-gray-to-cyan-bluish-gray-gradient-background has-text-color has-background has-link-color wp-elements-b895b423cb0fe3d2c1a4095fda7e936a"><blockquote><p>Pullquote, text, link and gradient background color. <a href="/">Example link.</a></p><cite>Citation</cite></blockquote></figure>
+
+
+
+<h2 class="wp-block-heading">Border</h2>
+
+
+
+<figure class="wp-block-pullquote has-border-color has-vivid-red-border-color" style="border-width:5px"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote has-border-color" style="border-color:#cf2e2e;border-width:5px;border-radius:50px"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote has-border-color" style="border-color:#3debeb;border-style:dotted;border-width:5px;border-radius:50px"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<h2 class="wp-block-heading">Typography</h2>
+
+
+
+<h3 class="wp-block-heading">Font size</h3>
+
+
+
+<figure class="wp-block-pullquote has-small-font-size"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote has-medium-font-size"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote has-large-font-size"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote has-x-large-font-size"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<h3 class="wp-block-heading">Appearance</h3>
+
+
+
+<figure class="wp-block-pullquote" style="font-style:italic;font-weight:200"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote" style="font-style:italic;font-weight:900"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<h3 class="wp-block-heading">Line height</h3>
+
+
+
+<figure class="wp-block-pullquote" style="line-height:2.4"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<h3 class="wp-block-heading">Letter spacing</h3>
+
+
+
+<figure class="wp-block-pullquote" style="letter-spacing:7px"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<h3 class="wp-block-heading">Decoration</h3>
+
+
+
+<figure class="wp-block-pullquote" style="text-decoration:underline"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote" style="text-decoration:line-through"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<h3 class="wp-block-heading">Letter case</h3>
+
+
+
+<figure class="wp-block-pullquote" style="text-transform:uppercase"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote" style="text-transform:lowercase"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+
+
+
+<figure class="wp-block-pullquote" style="text-transform:capitalize"><blockquote><p>Pullquote, no alignment</p><cite>Citation</cite></blockquote></figure>
+</div>
+			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2024-02-05T16:11:39+00:00"><a href="http://127.0.0.1:9400/2024/02/05/pullquote/">February 5, 2024</a></time></div>
+		</div>
+		
+	</li><li class="wp-block-post post-44 post type-post status-publish format-standard hentry category-text">
+		
+		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+			
+			<h2 class="wp-block-post-title has-x-large-font-size"><a href="http://127.0.0.1:9400/2024/02/05/preformatted/" target="_self" >Preformatted</a></h2>
+			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+<pre class="wp-block-preformatted">Some preformatted text</pre>
+
+
+
+<pre class="wp-block-preformatted"><strong>Some bold preformatted text</strong></pre>
+
+
+
+<pre class="wp-block-preformatted"><em>Some italic preformatted text</em></pre>
+
+
+
+<pre class="wp-block-preformatted"><a href="/">Some linked preformatted text</a></pre>
+
+
+
+<pre class="wp-block-preformatted"><mark style="background-color:#990000;color:#ffcdcd" class="has-inline-color">Some highlighted preformatted text</mark></pre>
+
+
+
+<h2 class="wp-block-heading">Color</h2>
+
+
+
+<pre class="wp-block-preformatted has-vivid-red-color has-text-color has-link-color wp-elements-25bbbbe987d4f8bb7ba65a453b715271">Some preformatted text</pre>
+
+
+
+<pre class="wp-block-preformatted has-vivid-green-cyan-color has-vivid-purple-background-color has-text-color has-background has-link-color wp-elements-66dd8fdc6bf50d3f221e9f295a005919">Some preformatted text</pre>
+
+
+
+<h2 class="wp-block-heading">Typography</h2>
+
+
+
+<h3 class="wp-block-heading">Font size</h3>
+
+
+
+<pre class="wp-block-preformatted has-small-font-size">Some preformatted text</pre>
+
+
+
+<pre class="wp-block-preformatted has-medium-font-size">Some preformatted text</pre>
+
+
+
+<pre class="wp-block-preformatted has-large-font-size">Some preformatted text</pre>
+
+
+
+<pre class="wp-block-preformatted has-x-large-font-size">Some preformatted text</pre>
+
+
+
+<h3 class="wp-block-heading">Appearance</h3>
+
+
+
+<pre class="wp-block-preformatted" style="font-style:italic;font-weight:200">Some preformatted text</pre>
+
+
+
+<pre class="wp-block-preformatted" style="font-style:italic;font-weight:900">Some preformatted text</pre>
+
+
+
+<h3 class="wp-block-heading">Line height</h3>
+
+
+
+<pre class="wp-block-preformatted" style="line-height:2.4">Some preformatted text</pre>
+
+
+
+<h3 class="wp-block-heading">Letter spacing</h3>
+
+
+
+<pre class="wp-block-preformatted" style="letter-spacing:7px">Some preformatted text</pre>
+
+
+
+<h3 class="wp-block-heading">Decoration</h3>
+
+
+
+<pre class="wp-block-preformatted" style="text-decoration:underline">Some preformatted text</pre>
+
+
+
+<pre class="wp-block-preformatted" style="text-decoration:line-through">Some preformatted text</pre>
+
+
+
+<h3 class="wp-block-heading">Letter case</h3>
+
+
+
+<pre class="wp-block-preformatted" style="text-transform:uppercase">Some preformatted text</pre>
+
+
+
+<pre class="wp-block-preformatted" style="text-transform:lowercase">Some preformatted text</pre>
+
+
+
+<pre class="wp-block-preformatted" style="text-transform:capitalize">Some preformatted text</pre>
+
+
+
+<h2 class="wp-block-heading">Padding and margin</h2>
+
+
+
+<pre class="wp-block-preformatted" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">Some preformatted text, padding preset: 4</pre>
+
+
+
+<pre class="wp-block-preformatted" style="margin-top:var(--wp--preset--spacing--50);margin-right:var(--wp--preset--spacing--50);margin-left:var(--wp--preset--spacing--50)">Some preformatted text, margin preset: 4</pre>
+</div>
+			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2024-02-05T16:09:28+00:00"><a href="http://127.0.0.1:9400/2024/02/05/preformatted/">February 5, 2024</a></time></div>
+		</div>
+		
+	</li><li class="wp-block-post post-39 post type-post status-publish format-standard hentry category-text tag-block-spacing tag-border">
+		
+		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+			
+			<h2 class="wp-block-post-title has-x-large-font-size"><a href="http://127.0.0.1:9400/2024/02/05/details/" target="_self" >Details</a></h2>
+			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+<details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow" open><summary>Open by default</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<h2 class="wp-block-heading">Alignment</h2>
+
+
+
+<details class="wp-block-details alignwide is-layout-flow wp-block-details-is-layout-flow"><summary>Wide width</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<details class="wp-block-details alignfull is-layout-flow wp-block-details-is-layout-flow"><summary>Full width</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<h2 class="wp-block-heading">Color</h2>
+
+
+
+<details class="wp-block-details has-vivid-red-color has-text-color has-link-color wp-elements-20fd725416c43724166fdb9fc46c6255 is-layout-flow wp-block-details-is-layout-flow"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<details class="wp-block-details has-white-color has-vivid-purple-background-color has-text-color has-background has-link-color wp-elements-93ef80a72d360b17a3d41f25b151929a is-layout-flow wp-block-details-is-layout-flow"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<details class="wp-block-details has-white-color has-vivid-purple-background-color has-text-color has-background has-link-color wp-elements-eb06c7883642a52dca1acfffd608d66c is-layout-flow wp-block-details-is-layout-flow"><summary>Summary</summary>
+<p>Paragraph block <a href="/">with link</a></p>
+</details>
+
+
+
+<h2 class="wp-block-heading">Border</h2>
+
+
+
+<details class="wp-block-details has-border-color has-vivid-red-border-color is-layout-flow wp-block-details-is-layout-flow" style="border-width:6px"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<details class="wp-block-details has-border-color is-layout-flow wp-block-details-is-layout-flow" style="border-color:#2dbecf;border-style:dotted;border-width:6px"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<h2 class="wp-block-heading">Dimensions</h2>
+
+
+
+<p>Padding preset: 4</p>
+
+
+
+<details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<p>Margin preset: 4</p>
+
+
+
+<details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow" style="margin-top:var(--wp--preset--spacing--50);margin-right:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50);margin-left:var(--wp--preset--spacing--50)"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<p>Block spacing preset: 4</p>
+
+
+
+<details class="wp-block-details is-layout-flow wp-container-core-details-is-layout-12 wp-block-details-is-layout-flow"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<h2 class="wp-block-heading">Typography</h2>
+
+
+
+<h3 class="wp-block-heading">Font size</h3>
+
+
+
+<details class="wp-block-details has-small-font-size is-layout-flow wp-block-details-is-layout-flow"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<details class="wp-block-details has-medium-font-size is-layout-flow wp-block-details-is-layout-flow"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<details class="wp-block-details has-large-font-size is-layout-flow wp-block-details-is-layout-flow"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<details class="wp-block-details has-x-large-font-size is-layout-flow wp-block-details-is-layout-flow"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<h3 class="wp-block-heading">Appearance</h3>
+
+
+
+<details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow" style="font-style:italic;font-weight:200"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow" style="font-style:italic;font-weight:900"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<h3 class="wp-block-heading">Line height</h3>
+
+
+
+<details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow" style="line-height:2.4"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<h3 class="wp-block-heading">Letter spacing</h3>
+
+
+
+<details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow" style="letter-spacing:7px"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<h3 class="wp-block-heading">Decoration</h3>
+
+
+
+<details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow" style="text-decoration:underline"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow" style="text-decoration:line-through"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<h3 class="wp-block-heading">Letter case</h3>
+
+
+
+<details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow" style="text-transform:uppercase"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow" style="text-transform:lowercase"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+
+
+
+<details class="wp-block-details is-layout-flow wp-block-details-is-layout-flow" style="text-transform:capitalize"><summary>Summary</summary>
+<p>Paragraph block</p>
+</details>
+</div>
+			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2024-02-05T16:07:22+00:00"><a href="http://127.0.0.1:9400/2024/02/05/details/">February 5, 2024</a></time></div>
+		</div>
+		
+	</li><li class="wp-block-post post-31 post type-post status-publish format-standard hentry category-text tag-border">
+		
+		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+			
+			<h2 class="wp-block-post-title has-x-large-font-size"><a href="http://127.0.0.1:9400/2024/02/05/code/" target="_self" >Code</a></h2>
+			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+<pre class="wp-block-code"><code>Hello World, default width (none).</code></pre>
+
+
+
+<pre class="wp-block-code alignwide"><code>Hello World. Wide width.</code></pre>
+
+
+
+<pre class="wp-block-code"><code><strong>Hello World, bold</strong></code></pre>
+
+
+
+<pre class="wp-block-code"><code><em>Hello World, italic</em></code></pre>
+
+
+
+<pre class="wp-block-code"><code><a href="/">Hello World, linked</a></code></pre>
+
+
+
+<pre class="wp-block-code"><code><mark style="background-color:#fbe49c;color:#194ada" class="has-inline-color">Hello World, highlighted</mark></code></pre>
+
+
+
+<h2 class="wp-block-heading">Color</h2>
+
+
+
+<pre class="wp-block-code has-vivid-red-color has-text-color has-link-color wp-elements-e1dccdbddc3f273a1ff511f448a1f594"><code>Hello World</code></pre>
+
+
+
+<pre class="wp-block-code has-vivid-red-color has-pale-cyan-blue-background-color has-text-color has-background has-link-color wp-elements-d7b59c9beb186989dac5521c17c790a6"><code>Hello World</code></pre>
+
+
+
+<h2 class="wp-block-heading">Typography</h2>
+
+
+
+<h3 class="wp-block-heading">Font size</h3>
+
+
+
+<pre class="wp-block-code has-small-font-size"><code>Hello World</code></pre>
+
+
+
+<pre class="wp-block-code has-medium-font-size"><code>Hello World</code></pre>
+
+
+
+<pre class="wp-block-code has-large-font-size"><code>Hello World</code></pre>
+
+
+
+<pre class="wp-block-code has-x-large-font-size"><code>Hello World</code></pre>
+
+
+
+<h3 class="wp-block-heading">Appearance</h3>
+
+
+
+<pre class="wp-block-code" style="font-style:italic;font-weight:200"><code>Hello World</code></pre>
+
+
+
+<pre class="wp-block-code" style="font-style:italic;font-weight:900"><code>Hello World</code></pre>
+
+
+
+<h3 class="wp-block-heading">Line height</h3>
+
+
+
+<pre class="wp-block-code" style="line-height:2.4"><code>Hello World</code></pre>
+
+
+
+<h3 class="wp-block-heading">Letter spacing</h3>
+
+
+
+<pre class="wp-block-code" style="letter-spacing:7px"><code>Hello World</code></pre>
+
+
+
+<h3 class="wp-block-heading">Decoration</h3>
+
+
+
+<pre class="wp-block-code" style="text-decoration:underline"><code>Hello World</code></pre>
+
+
+
+<pre class="wp-block-code" style="text-decoration:line-through"><code>Hello World</code></pre>
+
+
+
+<h3 class="wp-block-heading">Letter case</h3>
+
+
+
+<pre class="wp-block-code" style="text-transform:uppercase"><code>Hello World</code></pre>
+
+
+
+<pre class="wp-block-code" style="text-transform:lowercase"><code>Hello World</code></pre>
+
+
+
+<pre class="wp-block-code" style="text-transform:capitalize"><code>Hello World</code></pre>
+
+
+
+<h2 class="wp-block-heading">Border</h2>
+
+
+
+<pre class="wp-block-code has-border-color" style="border-color:#cf2e2e;border-width:5px;border-radius:10px"><code>Hello World</code></pre>
+
+
+
+<h2 class="wp-block-heading">Padding and margin</h2>
+
+
+
+<pre class="wp-block-code" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><code>Hello World, padding preset: 4</code></pre>
+
+
+
+<pre class="wp-block-code" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50)"><code>Hello World, <strong>vertical</strong> margin preset: 4</code></pre>
+</div>
+			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2024-02-05T16:04:00+00:00"><a href="http://127.0.0.1:9400/2024/02/05/code/">February 5, 2024</a></time></div>
+		</div>
+		
+	</li><li class="wp-block-post post-23 post type-post status-publish format-standard hentry category-text">
+		
+		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+			
+			<h2 class="wp-block-post-title has-x-large-font-size"><a href="http://127.0.0.1:9400/2024/02/05/quote/" target="_self" >Quote</a></h2>
+			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+<h2 class="wp-block-heading">Alignment</h2>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>Quote, default (no alignment)</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote has-text-align-left is-layout-flow wp-block-quote-is-layout-flow">
+<p>Quote, left aligned</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote has-text-align-center is-layout-flow wp-block-quote-is-layout-flow">
+<p>Quote, centered</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote has-text-align-right is-layout-flow wp-block-quote-is-layout-flow">
+<p>Quote, right aligned</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote is-style-plain is-layout-flow wp-block-quote-is-layout-flow is-style-plain--2">
+<p>Quote, Plain style variation, default (no alignment)</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote has-text-align-left is-style-plain is-layout-flow wp-block-quote-is-layout-flow is-style-plain--3">
+<p>Quote, Plain style variation, left aligned</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote has-text-align-center is-style-plain is-layout-flow wp-block-quote-is-layout-flow is-style-plain--4">
+<p>Quote, Plain style variation, centered</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote has-text-align-right is-style-plain is-layout-flow wp-block-quote-is-layout-flow is-style-plain--5">
+<p>Quote, Plain style variation, right aligned</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<h2 class="wp-block-heading">Color</h2>
+
+
+
+<blockquote class="wp-block-quote has-vivid-red-color has-text-color has-link-color wp-elements-372e7ea87a2bbc51ebb76c6ad8952d30 is-layout-flow wp-block-quote-is-layout-flow">
+<p>Quote, with text color</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote is-style-default has-vivid-red-color has-pale-cyan-blue-background-color has-text-color has-background has-link-color wp-elements-b7e30462860e7fdd763411b0c2f47c7e is-layout-flow wp-block-quote-is-layout-flow">
+<p>Quote, with text and background color</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote is-style-default has-vivid-red-color has-pale-ocean-gradient-background has-text-color has-background has-link-color wp-elements-c515ed18b3f7295368b13e894edb6ded is-layout-flow wp-block-quote-is-layout-flow">
+<p>Quote, with text and gradient background color</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote has-vivid-red-color has-pale-cyan-blue-background-color has-text-color has-background has-link-color wp-elements-52699ce9be97447e6e2f5a004cd4837e is-layout-flow wp-block-quote-is-layout-flow">
+<p>Quote, with text, link and background color. <a href="/">Test link.</a></p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote wp-elements-d80a5539225588e2c2b79bba3cc044a2 is-layout-flow wp-block-quote-is-layout-flow">
+<h2 class="wp-block-heading">Quote, with heading color</h2>
+<cite>Citation</cite></blockquote>
+
+
+
+<h2 class="wp-block-heading">Typography</h2>
+
+
+
+<h3 class="wp-block-heading">Font size</h3>
+
+
+
+<blockquote class="wp-block-quote has-small-font-size is-layout-flow wp-block-quote-is-layout-flow">
+<p>Quote</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote has-medium-font-size is-layout-flow wp-block-quote-is-layout-flow">
+<p>Quote</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote has-large-font-size is-layout-flow wp-block-quote-is-layout-flow">
+<p>Quote</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote has-x-large-font-size is-layout-flow wp-block-quote-is-layout-flow">
+<p>Quote</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<h3 class="wp-block-heading">Appearance</h3>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow" style="font-style:italic;font-weight:200">
+<p>Quote</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow" style="font-style:italic;font-weight:900">
+<p>Quote</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<h3 class="wp-block-heading">Line height</h3>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow" style="line-height:2.4">
+<p>Quote</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<h3 class="wp-block-heading">Letter spacing</h3>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow" style="letter-spacing:7px">
+<p>Quote</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<h3 class="wp-block-heading">Decoration</h3>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow" style="text-decoration:underline">
+<p>Quote</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow" style="text-decoration:line-through">
+<p>Quote</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<h3 class="wp-block-heading">Letter case</h3>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow" style="text-transform:uppercase">
+<p>Quote</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow" style="text-transform:lowercase">
+<p>Quote</p>
+<cite>Citation</cite></blockquote>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow" style="text-transform:capitalize">
+<p>Quote</p>
+<cite>Citation</cite></blockquote>
+</div>
+			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2024-02-05T16:00:46+00:00"><a href="http://127.0.0.1:9400/2024/02/05/quote/">February 5, 2024</a></time></div>
+		</div>
+		
+	</li><li class="wp-block-post post-19 post type-post status-publish format-standard hentry category-text">
+		
+		<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+			
+			<h2 class="wp-block-post-title has-x-large-font-size"><a href="http://127.0.0.1:9400/2024/02/05/list/" target="_self" >List</a></h2>
+			<div class="entry-content alignfull wp-block-post-content has-medium-font-size has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">
+<h2 class="wp-block-heading">Unordered</h2>
+
+
+
+<ul class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>List item</strong></li>
+
+
+
+<li><em>List item</em>
+<ul class="wp-block-list">
+<li><a href="/">Nested list item</a>
+<ul class="wp-block-list">
+<li><mark style="background-color:#aff6b4;color:#e30000" class="has-inline-color">Another nested list item</mark></li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">Ordered</h2>
+
+
+
+<ol class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ol>
+
+
+
+<p>A second ordered list with starter value set to 4:</p>
+
+
+
+<ol start="4" class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+
+
+
+<li></li>
+</ol>
+
+
+
+<h3 class="wp-block-heading">Number styles</h3>
+
+
+
+<ol style="list-style-type:upper-alpha" class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ol>
+
+
+
+<ol style="list-style-type:lower-alpha" class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ol>
+
+
+
+<ol style="list-style-type:upper-roman" class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ol>
+
+
+
+<ol style="list-style-type:lower-roman" class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ol>
+
+
+
+<h3 class="wp-block-heading">Reverse order</h3>
+
+
+
+<ol reversed class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ol>
+
+
+
+<h2 class="wp-block-heading">Color</h2>
+
+
+
+<ul class="wp-block-list has-vivid-red-color has-text-color has-link-color wp-elements-bb5ce1a468b43d739b426813ea079026">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li><a href="/">Another nested list item</a></li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<ul class="wp-block-list has-vivid-red-color has-pale-cyan-blue-background-color has-text-color has-background has-link-color wp-elements-8db6cf1957926e16facbd2ff43da784f">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li><a href="/">Another nested list item</a></li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<ul class="wp-block-list has-vivid-red-color has-pale-cyan-blue-background-color has-text-color has-background has-link-color wp-elements-1d15949f41b7dd59820fcaa33ec6a9b6">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li><a href="/">Another nested list item</a></li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">Typography</h2>
+
+
+
+<h3 class="wp-block-heading">Font size</h3>
+
+
+
+<ul class="wp-block-list has-small-font-size">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<ul class="wp-block-list has-medium-font-size">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<ul class="wp-block-list has-large-font-size">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<ul class="wp-block-list has-x-large-font-size">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading">Appearance</h3>
+
+
+
+<ul style="font-style:italic;font-weight:200" class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<ul style="font-style:italic;font-weight:900" class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading">Line height</h3>
+
+
+
+<ul style="line-height:2.4" class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading">Letter spacing</h3>
+
+
+
+<ul style="letter-spacing:7px" class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading">Decoration</h3>
+
+
+
+<ul style="text-decoration:underline" class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<ul style="text-decoration:line-through" class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading">Letter case</h3>
+
+
+
+<ul style="text-transform:uppercase" class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<ul style="text-transform:lowercase" class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<ul style="text-transform:capitalize" class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<h2 class="wp-block-heading">Padding and margin</h2>
+
+
+
+<ul style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)" class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+
+
+
+<ul style="margin-top:var(--wp--preset--spacing--50);margin-right:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--50);margin-left:var(--wp--preset--spacing--50)" class="wp-block-list">
+<li>List item</li>
+
+
+
+<li>List item
+<ul class="wp-block-list">
+<li>Nested list item
+<ul class="wp-block-list">
+<li>Another nested list item</li>
+</ul>
+</li>
+</ul>
+</li>
+
+
+
+<li>List item</li>
+</ul>
+</div>
+			<div style="margin-top:var(--wp--preset--spacing--40);" class="wp-block-post-date has-small-font-size"><time datetime="2024-02-05T15:59:12+00:00"><a href="http://127.0.0.1:9400/2024/02/05/list/">February 5, 2024</a></time></div>
+		</div>
+		
+	</li></ul>
+	
+	<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+		
+	</div>
+	
+	
+	<div class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
+		<nav class="alignwide wp-block-query-pagination is-content-justification-space-between is-layout-flex wp-container-core-query-pagination-is-layout-1 wp-block-query-pagination-is-layout-flex" aria-label="Pagination">
+			
+			<div class="wp-block-query-pagination-numbers"><span aria-current="page" class="page-numbers current">1</span>
+<a class="page-numbers" href="http://127.0.0.1:9400/category/text/page/2/">2</a></div>
+			<a href="http://127.0.0.1:9400/category/text/page/2/" class="wp-block-query-pagination-next">Next Page<span class='wp-block-query-pagination-next-arrow is-arrow-arrow' aria-hidden='true'>→</span></a>
+		</nav>
+	</div>
+	
+</div>
+
+
+</main>
+
+
+<footer class="wp-block-template-part">
+<div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50)">
+	
+	<div class="wp-block-group alignwide is-layout-flow wp-block-group-is-layout-flow">
+		
+
+		
+		<div class="wp-block-group alignfull is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-19 wp-block-group-is-layout-flex">
+			
+			<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
+				
+				<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:100%"><h2 class="wp-block-site-title"><a href="http://127.0.0.1:9400" target="_self" rel="home">wp-markup-checker</a></h2>
+
+				
+				</div>
+				
+
+				
+				<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+					
+					<div style="height:var(--wp--preset--spacing--40);width:0px" aria-hidden="true" class="wp-block-spacer"></div>
+					
+				</div>
+				
+			</div>
+			
+
+			
+			<div class="wp-block-group is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-18 wp-block-group-is-layout-flex">
+				<nav class="is-vertical wp-block-navigation is-layout-flex wp-container-core-navigation-is-layout-2 wp-block-navigation-is-layout-flex" aria-label=""><ul class="wp-block-navigation__container  is-vertical wp-block-navigation"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="#"><span class="wp-block-navigation-item__label">Blog</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="#"><span class="wp-block-navigation-item__label">About</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="#"><span class="wp-block-navigation-item__label">FAQs</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="#"><span class="wp-block-navigation-item__label">Authors</span></a></li></ul></nav>
+
+				<nav class="is-vertical wp-block-navigation is-layout-flex wp-container-core-navigation-is-layout-3 wp-block-navigation-is-layout-flex" aria-label=""><ul class="wp-block-navigation__container  is-vertical wp-block-navigation"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="#"><span class="wp-block-navigation-item__label">Events</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="#"><span class="wp-block-navigation-item__label">Shop</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="#"><span class="wp-block-navigation-item__label">Patterns</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="#"><span class="wp-block-navigation-item__label">Themes</span></a></li></ul></nav>
+			</div>
+				
+		</div>
+		
+
+		
+		<div style="height:var(--wp--preset--spacing--70)" aria-hidden="true" class="wp-block-spacer"></div>
+		
+
+		
+		<div class="wp-block-group alignfull is-content-justification-space-between is-layout-flex wp-container-core-group-is-layout-20 wp-block-group-is-layout-flex">
+			
+			<p class="has-small-font-size">Twenty Twenty-Five</p>
+			
+			
+			<p class="has-small-font-size">
+				Designed with <a href="https://wordpress.org" rel="nofollow">WordPress</a>			</p>
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+
+</footer>
+</div>
+<script id="wp-block-template-skip-link-js-after">
+	( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		/*
+		 * Get the site wrapper.
+		 * The skip-link will be injected in the beginning of it.
+		 */
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = 'Skip to content';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );
+	
+</script>
+</body>
+</html>
